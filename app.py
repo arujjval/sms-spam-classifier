@@ -5,6 +5,9 @@ from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 import string
 
+nltk.download('punkt')
+nltk.download('stopwords')
+
 tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('spam_model.pkl', 'rb'))
 
